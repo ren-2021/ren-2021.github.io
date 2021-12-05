@@ -180,6 +180,12 @@ h1, .h1 {
   }
 }
 
+@media (max-width: 768px){
+  #appdev-title{
+    font-size: 40px;
+  }
+}
+
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
