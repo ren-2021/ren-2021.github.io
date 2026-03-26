@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utp-8">
+   <meta name="viewport" content="width=device-width"/>
+   <meta name="description" content="Enjoy full of technology information"/>
+   <meta name="keywords" content="Technology Information"/>
+   <meta name="author" content="Rendel Sevilla"/>
+   <title>HowTo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+   <link rel="stylesheet" href="./css/style.css"> 
+  </head>
+  <body id="ref">
+   <header class="navbar navbar-default navbar-fixed-top">
+   <img class="img-logo" src="img/img-logo.png"> 
+     <div class="container">
+       <div id="branding">
+	     <h1>Slize<span class="colorhighlight">Tech</span></h1>
+		 <h6>BASIC TECH INFORMATION TO LEARN</h6>
+       </div>
+	 <nav id="navbar-menu">
+	   <ul>
+	     <li><a href="index.html">Home</a></li>
+		 <li class="current"><a href="#">HowTo</a></li>
+		 <li><a href="techterms.html">TechTerms</a></li>
+		 <li><a href="techtrivia.html">TechTrivia</a></li>
+		 <li><a href="mindgames.html">MindGames</a></li>
+		 <li>
+		 <div class="form">
+		    <form class="form-search ngen-search-form" action="" method="get">
+			   <input type="text" name="q" id="search-input" class="form-search-input" placeholder="Search..." dir="ltr">
+			   <i id="glyphicon" class="glyphicon glyphicon-search custom"></i>
+			</form>
+			</div>
+		 </li>
+	   </ul>
+	 </nav>
+	 </div>
+   </header>
+   
+   <section id="sidebar">
+	 <img class="img-top" src="img/bg-top.png">
+	    <h1 id="span1">How To</h1>
+		<h4 id="span2">Know More, Learn More in this Tech tutorials</h4>
+   </section>
+   
+   <section id="sidebar-second">
+     <div class="container">
+	   <h4>LEARNING TUTORIALS</h4>
+	   
+	   <ul class="resourceListCourse">
+	        <li><a href="powersupplytesting.html"> <img class="classImage" src="img/psu.jpg">
+	        <div class="classDiv"> 
+                    <p class="classTitle">How to Test A Power Supply(PSU)?</p> 
+                    <p class="classDesc"> Learn the steps on how to test a Power Supply(PSU). </p> 
+                </div> 
+            </a></li>
+            <li><a href="assembleanddisassemble.html"> <img class="classImage" src="img/com.jpg">  
+                <div class="classDiv"> 
+                    <p class="classTitle">How To Assemble And Disassemble A Computer?</p> 
+                    <p class="classDesc"> Learn how to properly assemble and disassemble a system unit. </p> 
+                </div> 
+            </a></li>
+            <li><a href="crimprj45.html"> <img class="classImage" src="img/crimp.jpg"> 
+                <div class="classDiv"> 
+                    <p class="classTitle">How to Crimp RJ45?</p> 
+                    <p class="classDesc"> Learn how to crimp RJ45</p> 
+                </div> 
+            </a></li>
+            <li><a href="connectcomputers.html"> <img class="classImage" src="img/dell.jpg"> 
+                <div class="classDiv"> 
+                    <p class="classTitle">How to Connect Computers Via Cable?</p> 
+                    <p class="classDesc"> Learn how to connect computer using lan cable</p> 
+                </div> 
+            </a></li>
+			</ul>
+	 </div>
+   </section>
+   
+   <footer class="footer">
+     <div class="container">
+      <p class="text-muted">SlizeTech, Copyright &copy; 2017</p>
+	 </div> 
+   </footer>  
+    <script src="jquery/jquery.js"></script>
+<script>
+	   $(document).ready(function() {
+	      $("#glyphicon").click(function(){
+		  $('#search-input').toggleClass('search-input-open'); 
+	     }); 
+		 
+		 $(document).click(function(e){
+		   if(!$(e.target).closest('.ngen-search-form').length){
+		  $('#search-input').removeClass('search-input-open'); 
+	       }
+		 });
+	   });
+	   
+	</script>	
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>   
+  </body>
+</html>
